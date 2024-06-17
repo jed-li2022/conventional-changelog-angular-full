@@ -1,0 +1,40 @@
+{
+  "name": "@jed-li2022/conventional-changelog-angular-full",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Angular-full preset for conventional-changelog.",
+  "author": "Jedi Li",
+  "license": "ISC",
+  "homepage": "https://github.com/jed-li2022/conventional-changelog-angular-full#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jed-li2022/conventional-changelog-angular-full.git",
+    "directory": "."
+  },
+  "bugs": {
+    "url": "https://github.com/jed-li2022/conventional-changelog-angular-full/issues"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "angular-full",
+    "preset"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": "./src/index.js",
+  "publishConfig": {
+    "directory": "package",
+    "linkDirectory": false
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "clear": "del ./package",
+    "postpublish": "pnpm clear"
+  },
+  "dependencies": {
+    "compare-func": "^2.0.0"
+  }
+}
